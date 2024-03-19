@@ -9,6 +9,8 @@
 
 本项目是根据[SYSU-HI-LAB/Fundamentals-of-autopilot-project_v2](https://github.com/SYSU-HI-LAB/Fundamentals-of-autopilot-project_v2)的要求而实现的。
 
+代码较详细解析可跳转http://cleversmall.com/posts/ea3353e6/
+
 ## 任务完成情况
 
 ### 标准地图
@@ -80,6 +82,7 @@
 8. 等待路径计算时间（平均约为20~30秒，少数情况会达到近1分钟，若超过一分钟，请中断程序并重新进行步骤5或6）
 
 9. 到达终点后，命令行终端将会显示所小车移动花费的时间
+
 ### 参数设置
 
 在所附上的代码中，共有两个重要组成模块，分别是rrt_planner.py和dynamic.py。

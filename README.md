@@ -7,6 +7,8 @@
 
 本作业通过ros进行完成，编写了功能包planner进行实现，功能包中由一系列python代码负责ros话题通信。主要文件为rrt_planner.py和dynamic.py。
 
+本项目是根据[SYSU-HI-LAB/Fundamentals-of-autopilot-project_v2](https://github.com/SYSU-HI-LAB/Fundamentals-of-autopilot-project_v2)的要求而实现的。
+
 ## 任务完成情况
 
 ### 标准地图

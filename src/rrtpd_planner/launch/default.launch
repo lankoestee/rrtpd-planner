@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find rrtpd_planner)/map/sysu_standard.yaml"/>
+    <node pkg="rrtpd_planner" type="odom_broadcaster.py" name="odom_broadcaster" output="screen"/>
+    <!--<node pkg="rrtpd_planner" type="sinpath.py" name="sinpath" output="screen"/>-->
+    <!--<node pkg="rrtpd_planner" type="rrtpd_planner.py" name="rrtpd_planner" output="screen"/>-->
+    <!--<node pkg="rrtpd_planner" type="controller.py" name="controller" output="screen"/>-->
+    <node pkg="rrtpd_planner" type="rrt_planner.py" name="rrt_planner" output="screen"/>
+    <node pkg="rrtpd_planner" type="dynamic.py" name="dynamic" output="screen"/>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rrtpd_planner)/rviz/default.rviz"/>
+</launch>

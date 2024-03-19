@@ -66,13 +66,13 @@
 6. 若要运行默认地图的小车仿真，则输入以下命令
 
    ```bash
-   roslaunch planner default.launch
+   roslaunch rrtpd_planner default.launch
    ```
 
 7. 若要运行随机地图的小车仿真，则输入以下命令
 
    ```bash
-   roslaunch planner random.launch
+   roslaunch rrtpd_planner random.launch
    ```
 
 8. 等待路径计算时间（平均约为20~30秒，少数情况会达到近1分钟，若超过一分钟，请中断程序并重新进行步骤5或6）
@@ -80,7 +80,7 @@
 9. 到达终点后，命令行终端将会显示所小车移动花费的时间
 ### 参数设置
 
-在所附上的代码中，共有两个重要组成模块，分别是planner.py和dynamic.py。
+在所附上的代码中，共有两个重要组成模块，分别是rrt_planner.py和dynamic.py。
 
 规划部分的代码放在了rrt_planner.py中，它不存在参数设置的问题。
 

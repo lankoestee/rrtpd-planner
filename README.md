@@ -49,45 +49,40 @@
    pip3 install scipy
    ```
 
-2. 创建新的工作空间，并添加src文件夹
-
-   ```bash
-   git clone 
-   ```
-
-3. 克隆本仓库
+2. 克隆本仓库
 
    ```bash
    git clone https://github.com/lankoestee/rrtpd-planner.git
+   cd rrtpd-planner
    ```
    
-4. 进行编译
+3. 进行编译
 
    ```bash
    catkin_make
    ```
    
-5. 设置环境变量
+4. 设置环境变量
 
    ```bash
    source devel/setup.bash
    ```
 
-6. 若要运行默认地图的小车仿真，则输入以下命令
+5. 若要运行默认地图的小车仿真，则输入以下命令
 
    ```bash
    roslaunch rrtpd_planner default.launch
    ```
 
-7. 若要运行随机地图的小车仿真，则输入以下命令
+6. 若要运行随机地图的小车仿真，则输入以下命令
 
    ```bash
    roslaunch rrtpd_planner random.launch
    ```
 
-8. 等待路径计算时间（平均约为20~30秒，少数情况会达到近1分钟，若超过一分钟，请中断程序并重新进行步骤5或6）
+7. 等待路径计算时间（平均约为20~30秒，少数情况会达到近1分钟，若超过一分钟，请中断程序并重新进行步骤5或6）
 
-9.  到达终点后，命令行终端将会显示所小车移动花费的时间
+8.  到达终点后，命令行终端将会显示所小车移动花费的时间
 
 ### 参数设置
 
